@@ -30,17 +30,22 @@
   cfg.model.head.num_classes = 10
   print(cfg.model)   # 直接修改成功
   ```
+
 - **模型配置部分**
+
 ![img](images/5-1.png)
 
 - **数据集配置部分**
+
 ![img](images/5-2.png)
 ![img](images/5-3.png)
 
 - **优化参数配置部分**
+
 ![img](images/5-4.png)
 
 - **运行参数配置部分**
+
 ![img](images/5-5.png)
 ![img](images/5-6.png)
 
