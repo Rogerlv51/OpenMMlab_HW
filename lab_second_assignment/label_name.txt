@@ -1,0 +1,31 @@
+## 数据集类别名称对应
+Hami melon 哈密瓜
+cherry tomato 圣女果
+mangosteen 山竹
+Yangmei 杨梅
+pomelo 柚子
+lemon 柠檬
+longan 桂圆
+pear 梨
+coconut 椰子
+durian 榴莲
+pitaya 火龙果
+kiwis 猕猴桃
+pomegranate 石榴
+tangerine 砂糖橘
+carrot 胡萝卜
+navel orange 脐橙
+mango 芒果
+bitter gourd 苦瓜
+green apple 青苹果
+red apple 红苹果
+strawberry 草莓
+litchi 荔枝
+pineapple 菠萝
+White Grape 白葡萄
+red grape 红葡萄
+watermelon 西瓜
+tomato 西红柿
+cherry 车厘子
+banana 香蕉
+cucumber 黄瓜
