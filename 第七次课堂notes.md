@@ -1,6 +1,7 @@
 # 第七次课堂笔记-目标检测实战MMDet
 
-- **本次教程全程基于Google Colab，详细notebook如下：https://github.com/open-mmlab/mmdetection/blob/tutorials/demo/MMDet_Tutorial.ipynb**
+- **本次教程全程基于Google Colab，详细notebook如下：（官方教程）**
+    - https://github.com/open-mmlab/mmdetection/blob/tutorials/demo/MMDet_Tutorial.ipynb
 
 - **由于训练营视频可能比较久远的录播了，所以现在的tutorial分支已经有些变化，不过不影响我们学习**
 
@@ -39,30 +40,30 @@
 
     # 只可视化前 8 张图片
     for i in range(8):
-    item=dataset[i]
+        item=dataset[i]
 
-    img = item['inputs'].permute(1, 2, 0).numpy()
-    data_sample = item['data_samples'].numpy()
-    gt_instances = data_sample.gt_instances
-    img_path = osp.basename(item['data_samples'].img_path)
+        img = item['inputs'].permute(1, 2, 0).numpy()
+        data_sample = item['data_samples'].numpy()
+        gt_instances = data_sample.gt_instances
+        img_path = osp.basename(item['data_samples'].img_path)
 
-    gt_bboxes = gt_instances.get('bboxes', None)
-    gt_instances.bboxes = gt_bboxes.tensor
-    data_sample.gt_instances = gt_instances
+        gt_bboxes = gt_instances.get('bboxes', None)
+        gt_instances.bboxes = gt_bboxes.tensor
+        data_sample.gt_instances = gt_instances
 
-    visualizer.add_datasample(
-                osp.basename(img_path),
-                img,
-                data_sample,
-                draw_pred=False,
-                show=False)
-    drawed_image=visualizer.get_image()
+        visualizer.add_datasample(
+                    osp.basename(img_path),
+                    img,
+                    data_sample,
+                    draw_pred=False,
+                    show=False)
+        drawed_image=visualizer.get_image()
 
-    plt.subplot(2, 4, i+1)
-    plt.imshow(drawed_image[..., [2, 1, 0]])
-    plt.title(f"{osp.basename(img_path)}")
-    plt.xticks([])
-    plt.yticks([])
+        plt.subplot(2, 4, i+1)
+        plt.imshow(drawed_image[..., [2, 1, 0]])
+        plt.title(f"{osp.basename(img_path)}")
+        plt.xticks([])
+        plt.yticks([])
 
     plt.tight_layout()
     ```
