@@ -67,4 +67,39 @@
             order = order[ind+1]    # 更新order，继续循环
         return keep
     ```
-    
+
+- **训练：转化为密集预测模型的训练**
+
+    ![img](images/6-13.png)
+    ![img](images/6-14.png)
+    ![img](images/6-15.png)
+    **加入尺度预测，适应不同尺寸的物体**
+    ![img](images/6-16.png)
+    ![img](images/6-17.png)
+    ![img](images/6-18.png)
+    **现在目标检测模型基本都使用了上述的多尺度预测**
+    ![img](images/6-19.png)
+
+
+- **单阶段目标检测网络**
+
+    ![img](images/6-20.png)
+    ![img](images/6-21.png)
+    ![img](images/6-22.png)
+    **retinaNet的思想：单阶段最大的问题是正负样本不均衡**
+    ![img](images/6-23.png)
+    ![img](images/6-24.png)
+    **yolov3：集各家大成**
+    ![img](images/6-25.png)
+
+- **无锚框算法**
+  
+    ![img](images/6-26.png)
+    ![img](images/6-27.png)
+    ![img](images/6-28.png)
+    ![img](images/6-29.png)    
+    ![img](images/6-30.png)
+
+- **总结**
+
+    ![img](images/6-31.png)
