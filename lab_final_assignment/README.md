@@ -16,13 +16,17 @@
 - **实验结果**
 
     ![img](house.jpg)
+    
     ![img](canny.png)
 
     **prompt: 'A cyberpunk room style'**
+
     ![img](pred1.png)
 
     **prompt: 'Room decorated in European Mediterranean style'**
+
     ![img](pred2.png)
 
     **prompt: 'A traditional chinese room style and the windows are floor-to-ceiling'**
+
     ![img](pred3.png)
